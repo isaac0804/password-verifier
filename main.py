@@ -1,6 +1,7 @@
 password = input("Please put a password\n")
 score = 0
 
+#checking Uppercase
 has_upper = False
 for c in password:
   if c.isupper():
@@ -12,6 +13,17 @@ else:
   # add 1 to score
   score = score + 1
 
+#checking Lowercase
+has_lower = False
+for c in password:
+  if c.islower():
+    has_lower = True
+if not has_lower:
+  print ("No Lowercase")
+else: 
+  score = score +1
+
+#checking numbers
 has_num = False 
 for num in password:
   if num.isdigit():
